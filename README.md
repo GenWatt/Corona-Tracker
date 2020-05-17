@@ -1,0 +1,2 @@
+# Boilerplate
+TS,SCSS,BUBLE,HTML PLUGIN,SERVER,CSS EXTRACT,GH-PAGES,anime.js,webpack
