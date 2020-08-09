@@ -1,0 +1,13 @@
+@mixin btn($width: 40px, $height: initial) {
+  outline: none;
+  cursor: pointer;
+  border: none;
+  width: $width;
+  height: $height;
+}
+
+@mixin flex($justify: center, $align: center) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+}

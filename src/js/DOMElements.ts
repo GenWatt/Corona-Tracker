@@ -1,0 +1,16 @@
+export const DOMElements = {
+  totalDeaths: document.querySelector(".total-deaths") as HTMLElement,
+  totalCases: document.querySelector(".total-cases") as HTMLElement,
+  totalRecovered: document.querySelector(".total-recovered") as HTMLElement,
+  dailyDeaths: document.querySelector(".daily-deaths") as HTMLElement,
+  dailyCases: document.querySelector(".daily-cases") as HTMLElement,
+  dailyRecovered: document.querySelector(".daily-recovered") as HTMLElement,
+  searchCountryInput: document.querySelector(".search-country-input") as HTMLInputElement,
+  searchCountryBtn: document.querySelector(".search-country-btn") as HTMLButtonElement,
+  searchHeader: document.querySelector(".search-header") as HTMLElement,
+  lastUpdate: document.querySelector(".last-update") as HTMLElement,
+  optionBtns: document.querySelectorAll(".option-btns") as NodeListOf<HTMLButtonElement>,
+  selectCountry: document.getElementById("select-country") as HTMLSelectElement,
+  error: document.querySelector(".error") as HTMLElement,
+  loader: document.querySelector(".loader") as HTMLElement,
+};

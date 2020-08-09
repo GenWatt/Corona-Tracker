@@ -1,0 +1,39 @@
+@use "./variables.scss" as *;
+@use "./mixins.scss" as *;
+
+@media (max-width: 488px) {
+  html {
+    font-size: 14.5px;
+  }
+
+  .header::before {
+    height: 80vh;
+  }
+
+  .heading {
+    margin-left: 5px;
+  }
+
+  .dashboard-total {
+    justify-content: flex-end;
+
+    & .total-info {
+      margin-left: 0;
+    }
+  }
+
+  .last-update {
+    text-align: center;
+  }
+
+  .summary-chart {
+    transform: scale(1);
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
+
+  .search-country-label {
+    transform: translateX(-50%);
+    left: 45%;
+  }
+}

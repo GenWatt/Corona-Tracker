@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Corona Tracker</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="heading">Tracker</h1>
+      <div class="dashboard-total">
+        <p class="total-info">Total Deaths: <span class="deaths total-deaths"></span></p>
+        <p class="total-info">Total Cases: <span class="cases total-cases"></span></p>
+        <p class="total-info">Total Recovered: <span class="recovered total-recovered"></span></p>
+      </div>
+    </header>
+
+    <section>
+      <h1 class="search-header"></h1>
+      <span class="last-update"></span>
+      <p class="error"></p>
+    </section>
+
+    <div class="btn-set">
+      <button class="option-btns" value="total" id="total">Total</button>
+      <button class="option-btns" value="daily" id="daily">Daily</button>
+    </div>
+
+    <div class="loader">
+      <span class="circle"></span>
+      <span class="circle"></span>
+      <span class="circle"></span>
+    </div>
+
+    <canvas id="summary-chart" class="summary-chart"></canvas>
+
+    <form action="" class="search-country-form">
+      <label for="search-country" class="search-country-label">Search For Country</label>
+      <input type="text" name="search-country" id="search-country" class="search-country-input" />
+      <button class="search-country-btn"><i class="fas fa-search"></i></button>
+    </form>
+
+    <section class="country-selection">
+      <label for="select-country">Or select from list</label>
+      <select name="select-country" id="select-country" class="select-country">
+        <option value="global">Global</option>
+      </select>
+    </section>
+    <article class="advices">
+      <h2 class="advice-heading">Tips How To Don't Get Infected!</h2>
+      <ul class="advices-list">
+        <li class="icon advice"><i class="fas fa-hands-wash large"></i>Wash Your Hands</li>
+        <li class="icon advice"><i class="fas fa-people-arrows large"></i>Keep Distance (2m)</li>
+        <li class="icon advice"><i class="fas fa-temperature-high large"></i>Check Your Temperature</li>
+        <li class="icon advice"><i class="fas fa-head-side-mask large"></i>Wear a Mask In Public Places</li>
+      </ul>
+    </article>
+
+    <footer class="footer">
+      <p>All Rights Reserved</p>
+    </footer>
+    <script src="https://kit.fontawesome.com/61630affa7.js" crossorigin="anonymous"></script>
+  </body>
+</html>

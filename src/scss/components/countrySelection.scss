@@ -1,0 +1,17 @@
+@use "./variables.scss" as *;
+@use "./mixins.scss" as *;
+
+.country-selection {
+  @include flex();
+  margin-top: 25px;
+
+  & label {
+    margin-right: 10px;
+  }
+
+  & .select-country {
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+}

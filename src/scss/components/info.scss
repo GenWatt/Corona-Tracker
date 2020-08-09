@@ -1,0 +1,30 @@
+@use "./variables.scss" as *;
+@use "./mixins.scss" as *;
+
+.search-header {
+  font-size: $font-large;
+  text-align: center;
+  margin-top: 35px;
+}
+
+.last-update {
+  text-align: right;
+  width: 100%;
+  display: block;
+  padding-right: 10px;
+}
+
+.error {
+  color: $infected;
+  font-size: $font-large;
+  padding: 10px;
+  text-align: center;
+  opacity: 0;
+  transform: translateX(-200px);
+  transition: opacity 0.2s ease, transform 0.4s ease-in-out;
+}
+
+.show {
+  opacity: 1;
+  transform: translateX(0);
+}

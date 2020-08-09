@@ -47,9 +47,9 @@ module.exports = {
     fs: "empty",
   },
   plugins: [
-    new ExtractTextPlugin("./style.css"),
+    new ExtractTextPlugin("./dist/style.css"),
     new HtmlWebpackPlugin({
-      template: "./src/html/index.html",
+      template: "./src/index.html",
     }),
   ],
 };

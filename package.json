@@ -1,7 +1,7 @@
 {
   "name": "package",
   "version": "1.0.0",
-  "description": "Aplikacja pogodowa",
+  "description": "Corona-Tracker",
   "main": ".src/js/index.ts",
   "scripts": {
     "dev": "webpack-dev-server",
@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/GenWatt/weather-app.git"
+    "url": "git+https://github.com/GenWatt/Corona-Tracker.git"
   },
   "keywords": [
     "OOP"
@@ -18,9 +18,9 @@
   "author": "Adrian Raszka",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/GenWatt/weather-app/issues"
+    "url": "https://github.com/GenWatt/Corona-Tracker/issues"
   },
-  "homepage": "https://github.com/GenWatt/weather-app#readme",
+  "homepage": "https://github.com/GenWatt/Corona-Tracker#readme",
   "devDependencies": {
     "@babel/core": "^7.9.6",
     "@babel/preset-env": "^7.9.6",
@@ -43,6 +43,8 @@
     "webpack-dev-server": "^3.10.3"
   },
   "dependencies": {
-    "animejs": "^3.2.0"
+    "animejs": "^3.2.0",
+    "axios": "^0.19.2",
+    "chart.js": "^2.9.3"
   }
 }

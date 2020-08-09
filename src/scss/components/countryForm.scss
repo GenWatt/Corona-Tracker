@@ -1,0 +1,46 @@
+@use "./variables.scss" as *;
+@use "./mixins.scss" as *;
+
+.search-country-form {
+  @include flex(center, initial);
+  position: relative;
+}
+
+.search-country-label {
+  position: absolute;
+  font-size: $font-small;
+}
+
+.search-country-input {
+  outline: none;
+  border-radius: 10px;
+  background-color: $bg-color;
+  border: none;
+  box-shadow: $primary-box-shadow;
+  width: 70%;
+  padding: 10px;
+  color: $font-primary-color;
+  transition: box-shadow 0.2s ease;
+
+  &:hover,
+  &:focus {
+    box-shadow: $secondary-box-shadow;
+  }
+}
+
+.search-country-btn {
+  @include btn();
+  @include flex();
+  background-color: $bg-light;
+  border-radius: 10px;
+  font-size: $font-large;
+  padding: 10px;
+  margin-left: 10px;
+  transition: box-shadow 0.2s ease, transform 0.3s ease-in-out;
+
+  &:hover,
+  &:focus {
+    transform: scale(1.1);
+    box-shadow: $secondary-box-shadow;
+  }
+}

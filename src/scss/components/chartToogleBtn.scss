@@ -1,0 +1,25 @@
+@use "./variables.scss" as *;
+@use "./mixins.scss" as *;
+
+.btn-set {
+  width: 100%;
+  @include flex(space-evenly);
+}
+
+.option-btns {
+  @include btn(120px);
+  padding: 5px;
+  background-color: $bg-dark;
+  transition: background-color 0.2s ease;
+  border-radius: 10px;
+  color: $font-primary-color;
+
+  &:hover,
+  &:focus {
+    background-color: $bg-light;
+  }
+}
+
+.active {
+  background-color: $bg-light;
+}

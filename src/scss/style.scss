@@ -1,0 +1,31 @@
+@use "./variables.scss" as *;
+@use "./mixins.scss" as *;
+@use "./components/header.scss";
+@use "./components/info.scss";
+@use "./components/chartToogleBtn.scss";
+@use "./components/loader.scss";
+@use "./components/chart.scss";
+@use "./components/countryForm.scss";
+@use "./components/countrySelection.scss";
+@use "./components/advice.scss";
+@use "./components/responsive488px.scss";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $bg-color;
+  color: $font-primary-color;
+  overflow-x: hidden;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.footer {
+  margin-top: 10px;
+  @include flex();
+  border-top: 1px solid rgba(255, 255, 255, 0.295);
+  padding: 10px;
+}
