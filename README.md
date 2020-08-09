@@ -13,7 +13,7 @@
   <li>SCSS</li>
   <li>Typescript</li>
   <li>JS OOP</li>
-  <li><Webpack/li>
+  <li><Webpack</li>
   <li>Axios</li>
   <li>Chart.js</li>
 </ul>
