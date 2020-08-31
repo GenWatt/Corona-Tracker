@@ -48,7 +48,7 @@ class GetData {
       Error.hideError();
       Loader.hideLoader();
     } catch (error) {
-      Error.showError(error.message);
+      Error.showError(error.response.data.error.message);
       Loader.hideLoader();
     }
   }
@@ -74,7 +74,7 @@ class GetData {
       Error.hideError();
       Loader.hideLoader();
     } catch (error) {
-      Error.showError(error.message);
+      Error.showError(error.response.data.error.message);
       Loader.hideLoader();
     }
   }
